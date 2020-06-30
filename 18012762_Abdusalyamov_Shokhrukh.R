@@ -1,4 +1,4 @@
-# Final Spring 2020 June 6
+# Final Exam Spring 2020
 
 # Create your full name to variable 'my_fullname'
 my_fullname <- "Abdusalyamov Shokhrukh"
@@ -7,20 +7,9 @@ my_fullname <- "Abdusalyamov Shokhrukh"
 # Create your student number to variable 'my_std_no'
 my_std_no <- 18012762
 
-# Honor Policy. For this exam, you must work alone. 
-# You may not aid or accept aid from other students.
-
-# You may also consult any other non-human resources you want 
-# including the course textbook, handouts, your notes, other books, and on-line materials. 
 
 
 # Part 1: working with data frames 
-# The followings are the R code with data frames. 
-# You are to transform it into different R code with 
-# Note that this repeats the analysis from Part 1, but should be
-# performed using `dplyr`
-# Hint : Refer exercise1.R and exercise2.R in the Chapter 11(dplyr).
-#       And the keys have been already given.
 
 library(treemap)
 
@@ -32,20 +21,8 @@ data("GNI2014")
 View(GNI2014)
 nrow(GNI2014)
 
-# Description of 'GNI2014'
-# Gross national income (per capita) in dollars and 
-# population totals per country in 2014.
-# What is the GNI per capita?
-# the dollar value of a country's final income in a year, 
-# divided by its population.
-
-# What is the GNI?
-# Gross National Income (GNI) is a measurement of a country's income.
-
 library("dplyr")
 
-# Select the different continents (continents) of the countries in this data set.
-# Save this vector in a variable
 continents_dplyr <- select(GNI2014,continent)
 head(continents_dplyr)
 
